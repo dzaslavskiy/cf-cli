@@ -13,6 +13,8 @@ var ShouldFallbackToLegacy = false
 type commandList struct {
 	VerboseOrVersion bool `short:"v" long:"version" description:"verbose and version flag"`
 
+	Zone string `short:"z" long:"zone" description:"zone"`
+
 	V3Push v7.PushCommand `command:"v3-push" description:"Push a new app or sync changes to an existing app" hidden:"true"`
 
 	API                                v7.APICommand                                `command:"api" description:"Set or view target api url"`
